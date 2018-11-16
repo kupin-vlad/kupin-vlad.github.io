@@ -5,7 +5,7 @@
 <script>
   $.get("https://aws.random.car/meow").done(
   function(data){
-  alert(data.file)
+  $("#cat").append("<img scr='" + data.file + " '>")
   }
   )
   
