@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<script>
+  $.get("https://aws.random.car/meow").done(
+  function(data){
+  alert(data.file)
+  }
+  )
+  
+
+</scripipt>
+
+
+</head>
+<body>
+<div id="cat">
+
+</div>
+
+</body
