@@ -3,12 +3,13 @@
 <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 <script>
-  $.get("https://aws.random.car/meow").done(
-  function(data){
-  $("#cat").append("<img scr='" + data.file + " '>")
-  }
-  )
-  
+	function catloader(){
+	$.get("http://aws.random.cat/meow").done(
+		function(data){
+			$("#cat").append("<img width=150 src='" + data.file + "'>")
+			}
+		)
+	}
 
 </script>
 
@@ -18,5 +19,7 @@
 <div id="cat">
 
 </div>
-
+<button onclick="catloader()">Show me the cat</button>
 </body
+
+</html>
